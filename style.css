@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Lusitana&display=swap');
+
+
+:root {
+    --primary-color: #CEE5D0;
+    --secondary-color: #FED2AA;
+    --grey: #FAF7F7;
+    --button: #EBA99B;
+    --dark-mode-background: #1F2933;
+    --dark-mode-div: #323F4B;
+    --dark-mode-div2: #3E4C59;
+    --dark-mode-nav: #CBD2D9;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lusitana', 'serif';
+    scroll-behavior: smooth;
+}
+
+
+
+
+/******************** HOME  *********************/
+.nav-trans {
+    opacity: 0.33;
+}
+
+.nav {
+    justify-content: space-between;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: #FAF7F7;
+    height: 60px;
+    border-top: 1px solid var(--secondary-color);
+    z-index: 2;
+    transition: opacity 1s;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+
+
+}
+
+nav ul li {
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 15px;
+}
+
+nav ul li a {
+    text-transform: none;
+    text-decoration: none;
+    color: black;
+}
+
+.btn {
+    display: none;
+}
+
+
+header {
+    position: relative;
+    height: 100vh;
+}
+
+
+.titre-header {
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    color: white;
+    font-family: 'Lusitana', serif;
+    font-size: 2.5em;
+    display: inline-block;
+    text-align: center;
+}
+
+#background-video {
+    height: 93%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+    filter: brightness(80%);
+}
+
+/******************** ABOUT  *********************/
+.logo {
+    width: 200px;
+    height: 96px;
+    margin: 0 20%;
+    display: inline-block;
+}
+
+.logo2 {
+    display: none;
+}
+
+.card {
+    width: auto;
+    height: 43vh;
+    border: 5px solid var(--primary-color);
+    border-radius: 10px;
+    z-index: -1;
+    margin: 4vh 10vw;
+}
+
+
+#presentation {
+    height: 74vh;
+}
+
+.hidden {
+    opacity: 0;
+    transform: scale(0.95);
+    transition: all 0.7s ease-in-out;
+}
+
+
+.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+#presentation h2 {
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 108.2%;
+    position: relative;
+    left: 18vw;
+    top: 5vh;
+    display: inline-block;
+}
+
+#presentation .background {
+    background-color: var(--primary-color);
+    width: auto;
+    height: 61vh;
+    position: relative;
+    border-radius: 10px;
+    z-index: -2;
+    top: 8px;
+    margin: auto 10vw;
+}
+
+#presentation article {
+    font-weight: 400;
+    font-size: 1.1em;
+    line-height: 22px;
+    position: relative;
+    left: 8vw;
+    top: 8vh;
+    margin-right: 17vw;
+}
+
+
+#activities img {
+    width: 240px;
+    height: 193px;
+    border-radius: 10px;
+    margin: 3vh auto;
+    position: relative;
+    right: 8vw;
+}
+
+#activities .description {
+    font-weight: 400;
+    font-size: 0.9em;
+    line-height: 18px;
+    position: relative;
+    left: 3vw;
+    bottom: 1vh;
+}
+
+#activity1 h3 {
+    text-align: end;
+    right: 3vw;
+}
+
+#activity2 h3 {
+    left: 3vw;
+}
+
+#activity2 img {
+    right: 0vw;
+    left: 19vw;
+}
+
+#activity3 h3 {
+    text-align: end;
+    right: 3vw;
+}
+
+
+.equipment {
+    background-color: var(--primary-color);
+    margin-top: 5em;
+    display: inline-block;
+    height: 17em;
+    width: 100vw;
+}
+
+.equipment-p {
+    display: none;
+}
+
+
+.equipment ul {
+    margin-left: 3em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    list-style-type: none;
+    position: relative;
+    bottom: 2vh;
+}
+
+.equipment h2 {
+    position: relative;
+    left: 16vw;
+    bottom: 5vh;
+    font-size: 2em;
+    display: inline-block;
+}
+
+.reserve button {
+    background-color: var(--button);
+    border: none;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 10% 20%;
+}
+
+.reserve button a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+/******************** GUIDE  *********************/
+.titre-guides {
+    display: none;
+}
+
+.guide-photos {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.guide {
+    width: 300px;
+    height: 32em;
+}
+
+.margin-guides {
+    margin: 0 89px 0 0;
+}
+
+.guide-photo {
+    position: relative;
+    height: 50vh;
+    border-radius: 30px;
+    left: -43px;
+    z-index: 1;
+    bottom: 50vh;
+}
+
+.background-block {
+    position: relative;
+    background-color: var(--secondary-color);
+    width: 85vw;
+    height: 50vh;
+    border-radius: 10px;
+    bottom: 5vh;
+}
+
+.guide h2 {
+    position: relative;
+    top: 34vh;
+    left: 57vw;
+    font-size: 24px;
+    display: inline-block;
+    z-index: 1;
+    line-height: 1.1em;
+
+    /*margin-bottom: 61px;*/
+}
+
+.guide-description p {
+    margin: 8vh 15vw;
+    font-size: 1.2em;
+}
+
+
+.guide-content-container {
+    position: relative;
+    /*margin bottom maybe 61px*/
+}
+
+.guide-description-desktop {
+    display: none;
+}
+
+
+/******************** CONTACT  *********************/
+
+.form {
+    background-color: #CEE5D0;
+    text-align: center;
+    height: 500px;
+    border-radius: 10px;
+    margin: 0 20px 50px 20px;
+}
+
+.div-input {
+    padding-top: 70px;
+}
+
+.input-form {
+    width: 75%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.input-message {
+    width: 75%;
+    padding-bottom: 100px;
+    border-radius: 10px;
+}
+
+.reservation {
+    position: relative;
+    display: inline-block;
+    top: 43px;
+    left: 45px;
+    font-size: 2em;
+}
+
+.envoyez {
+    background-color: var(--button);
+    border: none;
+    color: white;
+    padding: 15px 70px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2em;
+    border-radius: 5px;
+    margin: 12% 18%;
+    /*maybe 10% 32%*/
+    cursor: pointer;
+}
+
+textarea {
+    padding: 15px 15px;
+}
+
+.footer {
+    background-color: #CEE5D0;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.conditions {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 5vw;
+    bottom: 0.5vh;
+}
+
+.socials {
+    min-width: 35vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    bottom: 1vh;
+    right: 5vw;
+}
+
+.socials img {
+    width: 24px;
+    height: 24px;
+}
+
+
+@media screen and (min-width : 1280px) {
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        border: none;
+        box-shadow: 10px 2px 5px #a0a0a0;
+        width: 100vw;
+    }
+
+    .nav ul li a:hover {
+        border-bottom: 3px solid var(--primary-color);
+    }
+
+
+    #background-video {
+        height: 100%;
+    }
+
+    .titre-header {
+        top: 35%;
+        left: 31%;
+        font-size: 4em;
+
+    }
+
+    .logo {
+        margin: 5% 40% 0 40%;
+        height: 160px;
+        width: 300px;
+    }
+
+    #presentation h2 {
+        font-size: 3em;
+        top: 8vh;
+    }
+
+    #presentation .background {
+        height: 53vh;
+        width: 60vw;
+
+    }
+
+    #presentation article {
+        font-size: 1.3em;
+        line-height: 26px;
+        max-width: 34vw;
+        position: relative;
+        top: 12vh;
+    }
+
+    #activities {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 15vh auto;
+    }
+
+    .card {
+        width: 29vw;
+        height: 55vh;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    #activities img {
+        width: 85%;
+        height: 30vh;
+        bottom: 2vh;
+        right: 0;
+        left: 0;
+    }
+
+    #activities h3 {
+        font-size: 1.4em;
+        line-height: 26px;
+        text-align: left;
+        position: relative;
+        left: 1vw;
+        top: 1vh
+    }
+
+
+    #activities .description {
+        font-size: 1em;
+        line-height: 22px;
+        left: 1vw;
+        bottom: 2vh;
+    }
+
+    .equipment {
+        margin: 5em 20% 0 20%;
+        height: 29em;
+        width: 60%;
+        border-radius: 10px;
+    }
+
+    .equipment-p {
+        display: inline-block;
+        font-size: 1.3em;
+        margin: -2vh 4vw auto 4vw;
+    }
+
+    .equipment-description {
+        display: inline-block;
+    }
+
+    .equipment ul {
+        margin: 52px auto 40px 51px;
+        font-size: 1.2em;
+        width: 35%;
+    }
+
+    .equipment h2 {
+        bottom: 7vh;
+        font-size: 3em;
+        left: 1em;
+    }
+
+
+    /* Dark theme CSS : */
+
+    button .btn {
+        outline: none;
+        background-color: transparent;
+        color: var(--dark-mode-nav);
+    }
+
+    .btn {
+        display: inline-block;
+    }
+
+    #themeLogo {
+        border: none;
+        flex-basis: 10%;
+        cursor: pointer;
+        font-size: 1.5em;
+    }
+
+    html {
+        background-color: white;
+        color: black;
+        transition: all .3s ease;
+    }
+
+    html.nuit {
+        background-color: var(--dark-mode-background);
+        color: #CDB298;
+    }
+
+    #background-dark.nuit {
+        background-color: var(--dark-mode-div);
+    }
+
+    #equipment-dark-mode.nuit {
+        background-color: var(--dark-mode-div);
+    }
+
+    #guide-dark-mode.nuit {
+        background-color: var(--dark-mode-div2);
+    }
+
+    #formulaire.nuit {
+        background-color: var(--dark-mode-div2);
+    }
+
+    #footer-dark-mode.nuit {
+        background-color: var(--dark-mode-div2);
+    }
+
+    #nav-dark-mode.nuit {
+        background-color: var(--dark-mode-nav);
+    }
+
+    /* End dark mode */
+
+
+    .reserve button {
+        padding: 20px 30px;
+        margin: 5% 40% 10% 40%;
+        width: 20%;
+    }
+
+    .reserve button:hover {
+        cursor: pointer;
+        background-color: rgb(226, 115, 115);
+    }
+
+
+    .titre-guides {
+        display: inline;
+        margin: 12% 0 10% 3%;
+        font-size: 3em;
+        line-height: 1.1em;
+    }
+
+    .guide h2 {
+        display: none;
+    }
+
+    .guide-photos {
+        justify-content: space-evenly;
+        overflow-x: hidden;
+        background-color: var(--secondary-color);
+        height: 70vh;
+    }
+
+    .margin-guides {
+        margin: 0;
+    }
+
+    .background-block {
+        display: none;
+    }
+
+    .guide-photo {
+        height: 60vh;
+        position: static;
+        margin: 40px 5px 0 10%;
+    }
+
+    .guide-description p {
+        margin: 10vh 20vw;
+    }
+
+    .guide-description-mobile {
+        display: none;
+    }
+
+    .guide-description-desktop {
+        display: inline-block;
+        margin: 0 30% 0 30%;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .logo2 {
+        position: absolute;
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        left: 42%;
+        top: 18%;
+    }
+
+    #presentation h2 {
+        font-size: 3em;
+        top: 8vh;
+    }
+
+    .reservation {
+        left: 350px;
+        top: 80px;
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    .form {
+        height: 500px;
+        margin: 30px 300px
+    }
+
+    .envoyez {
+        margin: 7% 18%;
+    }
+
+    .envoyez:hover {
+        cursor: pointer;
+        background-color: rgb(226, 115, 115);
+    }
+
+    .footer {
+        margin-bottom: 0px;
+        margin-top: 70px;
+    }
+
+    .conditions {
+        font-size: 1em;
+        line-height: 15px;
+        flex-direction: row;
+        left: 1vw;
+        bottom: 0;
+    }
+
+    .conditions p {
+        margin: auto 1vw;
+    }
+
+    .socials {
+        min-width: 25vw;
+        bottom: 0vw;
+        right: 1vw;
+    }
+
+    .socials img {
+        width: 34px;
+        height: 34px;
+        margin: auto;
+
+    }
+}

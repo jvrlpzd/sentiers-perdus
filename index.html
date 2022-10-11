@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sentiers perdus</title>
+</head>
+
+<body>
+    <!----------- ACCUEIL ------------->
+
+    <nav class="nav" id="nav-dark-mode">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#presentation">Concept</a></li>
+            <li><a href="#guide-dark-mode">Guides</a></li>
+            <li><a href="#contactform">Contact</a></li>
+            <button for="themeSwitch" class="btn" id="themeLogo">&#9789;</button>
+        </ul>
+    </nav>
+
+    <header id="header">
+
+        <video id="background-video" autoplay loop muted>
+            <source src="./video-rando.mp4" type="video/mp4">
+        </video>
+        <h1 class="titre-header hidden">Prenez une pause, <br>
+            explorez la <br> nature !</h1>
+        <img class="logo2 hidden" src="img/logo-blanc-sentiers-perdus.png" alt="Logo">
+    </header>
+
+    <!----------- A PROPOS ------------->
+
+    <img id="logo" class="logo hidden" src="img/logo-sentiers-perdus.png" alt="Logo">
+    <section id="presentation" class="hidden">
+
+        <h2>Une aventure<br>sur mesure !</h2>
+        <div class="background" id="background-dark">
+            <article>Chaque randonnée est une expérience unique. Que ça soit en groupe ou en solo, une randonnée avec un
+                guide professionnel est la meilleure
+                manière de découvrir la nature. Laissez votre guide préparer la partie logistique, partez à l'aventure
+                avec l'esprit tranquille et tout simplement profitez de la beauté de la nature ! <br> <br> Découvrez les
+                3 types de
+                randos proposées par Sentiers perdus qui peuvent être personnalisés selon vos envies.
+            </article>
+        </div>
+    </section>
+    <section id="activities">
+        <div class="activity hidden" id="activity1">
+            <div class="card">
+                <h3>Rando montagne</h3>
+                <img src="img/rando-montagne.jpg" class="montagne"
+                    alt="Deux randonneurs qui se dirigent vers une grande montagne≥ enneigé">
+                <div class="description">
+                    <p>Lieu : Chamonix <br>
+                        Equipement : Vêtements chauds <br>
+                        Descriptif : 2 jours / facile / débutant
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="activity hidden" id="activity2">
+            <div class="card">
+                <h3>Route des phares</h3>
+                <img src="img/rando-mer.jpg" alt="image of a path next to the sea">
+                <div class="description">
+                    <p>Lieu : Bretagne <br>
+                        Equipement : Coupe-vent <br>
+                        Descriptif : 4 jours / moyen / confirmé
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="activity hidden" id="activity3">
+            <div class="card">
+                <h3>Rando extrême à l'étranger</h3>
+                <img src="img/rando-extreme.jpg" alt="image of an extreme hike in a jungle">
+                <div class="description">
+                    <p>Lieu : Cambodge <br>
+                        Equipement : Imperméable <br>
+                        Descriptif : 7 jours / difficile / expert
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="equipment hidden" id="equipment-dark-mode">
+
+        <h2 class="equipment-h2">Equipement <br> de base</h2>
+        <div class="equipment-description">
+            <p class="equipment-p">Pour rendre cette aventure plus accessible à tout monde, notre équipe s’occupera de
+                ramener le matériel nécessaire : outils de cuisine, sacs de couchage, tapis des de sol isolant, tentes
+                et les repas. Pas besoin d’y penser !<br> Vous devez juste apporter :</p>
+            <ul class="equipment-ul">
+                <li>🥾 Tenue et chaussures adaptés</li>
+                <li>🎒 Sac à dos 40L</li>
+                <li>💧 Une gourde d'eau</li>
+                <li>🧥 Un K-Way</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section class="reserve hidden">
+        <button><a href="#contactform">Réservez maintenant</a></button>
+    </section>
+
+
+    <!----------- NOTRE GUIDE ------------->
+
+    <section class="guide-photos" id="guide-dark-mode">
+        <h2 class="titre-guides">Découvrez les <br> guides certifiés</h2>
+        <article class="guide margin-guides" id="guide1">
+            <h2>Je suis Ryan,<br> votre guide <br> certifié <br> breton !</h2>
+            <div class="background-block"></div>
+            <img class="guide-photo" src="./img/Ryan-guide.jpg" alt="Ryan a certified guide">
+        </article>
+        <article class="guide margin-guides" id="guide2">
+            <h2>Je suis Dori,<br>spécialisée <br> en rando <br> montagne !</h2>
+            <div class="background-block"></div>
+            <img class="guide-photo" src="img/guide-2.jpg" alt="Dori parce que Doroteya c'est trop long">
+        </article>
+        <article class="guide" id="guide3">
+            <h2>Je suis Javi,<br> guide <br> de randos <br> extrêmes !</h2>
+            <div class="background-block"></div>
+            <img class="guide-photo" src="img/guide-3.jpg" alt="Apparemment Javi c'est drôle">
+        </article>
+    </section>
+    <section class="guide-content-container">
+        <article class="guide-description hidden">
+
+            <p class="guide-description-mobile">Nous sommes Ryan, Dori et Javi, trois guides certifiés avec plus de 5
+                ans de pratique professionnelle.
+                Nous voulons vous offrir une expérience personnalisée et sécurisée. Lors de ces aventures, on partagera
+                toujours nos connaissances en plus sur l'histoire des lieux, l'écologie et la géologie. Quel que soit
+                votre niveau, vos intérêts ou votre planning, on a solution pour vous !</p>
+
+            <p class="guide-description-desktop">Nous sommes Ryan, Jess et Juan, trois guides professionnels et
+                certifiés. Pour nous, la randonnée est quelque chose de spécial. Une reconnexion à la nature. Une
+                reconnexion à soi-même. Développeurs web de base, nous avons découvert qu'on a souvent besoin d'une
+                pause, d'une déconnexion et qu'on a une passion en commun : la nature ! C'est pour cela qu'on a créé
+                Sentiers perdus : pour partager notre passion commune avec vous et nos connaissances.
+                <br> <br>
+                Nous voulons vous offrir une expérience personnalisée et sécurisée. Les randonnées qu'on propose sont
+                réfléchies en fonction de votre rythme, intérêts et besoins. Lors de ces aventures, on partagera
+                toujours nos connaissances en plus sur l'histoire des lieux, l'écologie et la géologie. Reste à sortir
+                vos chaussures de rando!
+            </p>
+        </article>
+
+    </section>
+
+    <!----------- CONTACT ------------->
+
+    <h2 class="reservation" id="contactform">Réservez votre <br> rando ici</h2>
+    <section class="formulaire">
+        <form action="submit" class="form" id="formulaire">
+            <div class="div-input">
+                <input type="text" id="name" name="user_name" class="input-form" placeholder="Name">
+            </div>
+            <div>
+                <input type="email" id="mail" name="user_mail" class="input-form" placeholder="Email">
+            </div>
+            <div>
+                <input id="msg" name="user_message" class="input-message" placeholder="Message">
+            </div>
+            <input type="submit" value="Envoyer" class="envoyez">
+            <p id="erreur" style="color: red"></p>
+        </form>
+    </section>
+
+
+
+    <footer class="footer" id="footer-dark-mode">
+        <div class="conditions">
+            <p>Conditions</p>
+            <p>Mentions légales</p>
+            <p>2022 All rights reserved</p>
+        </div>
+        <div class="socials">
+            <img src="/img/facebook.png" alt="facebook logo">
+            <img src="/img/instagram.png" alt="instagram logo">
+            <img src="/img/twitter.png" alt="twitter logo">
+        </div>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

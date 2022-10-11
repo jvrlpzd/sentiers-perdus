@@ -1,18 +1,11 @@
 
-// JS de Javier --------------------------------
+// JS de Javier - Apparition des élements avec scroll-------------------------------
 const hiddenElements = document.querySelectorAll('.hidden');
 
 const loadElement = (entries, observer) => {
-    // console.log(entries);
-    // console.log(observer);
+
 
     entries.forEach((entry) => {
-        // if (entry.isIntersecting) {
-
-        //     entry.target.classList.remove('hidden)');
-        //     entry.target.classList.add('visible)');
-
-        //     console.log('There it is');
         console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('visible');
@@ -26,19 +19,6 @@ const observer = new IntersectionObserver(loadElement, {
     threshold: 0.4
 });
 
-// // observer.observe(hiddenElements);
-
-// const observer = new IntersectionObserver((entries) => {
-//     entries.forEach((entry) => {
-//         console.log(entry)
-//         if (entry.isIntersecting) {
-//             entry.target.classList.add('visible');
-//         };
-
-//     });
-// });
-
-// const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 // JS de Ryan --------------------------------
